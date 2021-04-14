@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.cwl.texticon.TextIconView
+        android:id="@+id/text_icon_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        app:layout_constraintTop_toBottomOf="@id/text_icon_view_default"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:text="不设置图片宽高，则图片默认为文本的单行高度，并保持原比例"
+        app:icon="@mipmap/ic_launcher"
+        app:icon_margin_left="5dp"
+        app:text_color="@color/purple_700"
+        app:text_size="30dp" />
+
+    <com.cwl.texticon.TextIconView
+        android:id="@+id/text_icon_view_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:text="我是默认的图文混排View中的多行文本哦"
+        app:icon="@mipmap/ic_launcher" />
+
+    <com.cwl.texticon.TextIconView
+        android:id="@+id/text_icon_view_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        app:layout_constraintTop_toBottomOf="@id/text_icon_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:text="将尾部图片的尺寸设置的小于左侧的文本行高"
+        app:icon="@mipmap/ic_launcher"
+        app:icon_margin_left="5dp"
+        app:text_color="@color/purple_200"
+        app:text_size="30dp"
+        app:icon_width="20dp"
+        app:icon_height="20dp"/>
+
+    <com.cwl.texticon.TextIconView
+        android:id="@+id/text_icon_view_big"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        app:layout_constraintTop_toBottomOf="@id/text_icon_view_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:text="将尾部图片的尺寸设置的大于左侧的文本行高"
+        app:icon="@mipmap/ic_launcher"
+        app:icon_margin_left="5dp"
+        app:text_color="@color/teal_200"
+        app:text_size="30dp"
+        app:icon_width="100dp"
+        app:icon_height="100dp"/>
+
+    <com.cwl.texticon.TextIconView
+        android:id="@+id/text_icon_view_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        app:layout_constraintTop_toBottomOf="@id/text_icon_view_big"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:text="仅设置左侧文本背景仅设置左侧文本背景"
+        app:icon_margin_left="10dp"
+        app:icon="@mipmap/ic_launcher"
+        app:text_background="@drawable/shape_conner_10_red"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

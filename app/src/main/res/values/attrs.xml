@@ -1,0 +1,13 @@
+<resources>
+    <declare-styleable name="TextIconView">
+        <attr name="text_color" format="color" />
+        <attr name="text_size" format="dimension" />
+        <attr name="text_background" format="reference" />
+        <attr name="text" format="string" />
+        <attr name="icon" format="reference" />
+        <attr name="icon_width" format="dimension" />
+        <attr name="icon_height" format="dimension" />
+        <attr name="icon_margin_left" format="dimension" />
+        <attr name="text_raw_distance" format="dimension" />
+    </declare-styleable>
+</resources>
