@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/teal_700">
 
     <com.cwl.texticon.TextIconView
         android:id="@+id/text_icon_view"
@@ -17,6 +18,7 @@
         app:text="不设置图片宽高，则图片默认为文本的单行高度，并保持原比例"
         app:icon="@mipmap/ic_launcher"
         app:icon_margin_left="5dp"
+        app:text_raw_distance="10dp"
         app:text_color="@color/purple_700"
         app:text_size="30dp" />
 
@@ -70,10 +72,11 @@
         android:layout_margin="5dp"
         app:layout_constraintTop_toBottomOf="@id/text_icon_view_big"
         app:layout_constraintEnd_toEndOf="parent"
-        app:text="仅设置左侧文本背景仅设置左侧文本背景"
+        app:text="设置文本背景，长按动态改变"
         app:icon_margin_left="10dp"
+        app:text_size="20dp"
         app:icon="@mipmap/ic_launcher"
-        app:text_background="@drawable/shape_conner_10_red"
+        app:text_background="@drawable/shape_conner_8_red"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
