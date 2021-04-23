@@ -2,6 +2,7 @@
 多行文本默认放置自适应图标，可动态设置图标的宽高、文本颜色、文本尺寸
 
 ## 布局中使用
+```
  <com.cwl.texticon.TextIconView
         android:id="@+id/text_icon_view"
         android:layout_width="wrap_content"
@@ -14,8 +15,10 @@
         app:text_raw_distance="10dp"
         app:text_color="@color/purple_700"
         app:text_size="30dp" />
+ ```
 
 ## 代码中动态改变
+```
 text_icon_view_bg.apply {
             setOnLongClickListener {
                 val textBgDrawable = resources.getDrawable(R.drawable.shape_conner_5_purple, null)
@@ -35,3 +38,4 @@ text_icon_view_bg.apply {
                 return@setOnLongClickListener true
             }
  }
+```
